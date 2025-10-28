@@ -10,4 +10,4 @@ Goal: To create a seamless, accurate science calculator powered by raw Python co
 ### README polishing Finish Date:
 11/1/2025
 
-#### *More updates coming soon*
+#### *More updates launching soon*
