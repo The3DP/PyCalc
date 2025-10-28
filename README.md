@@ -1,8 +1,8 @@
 # PyCalc
 Goal: To create a seamless, accurate science calculator powered by raw Python code. 
 ### Calc-v1.0 Finish Date:
-10/28/2025
+11/1/2025
 ### README polishing Finish Date:
-10/28/25
+11/1/2025
 
 #### *More updates coming soon*
