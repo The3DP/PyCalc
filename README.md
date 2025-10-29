@@ -10,4 +10,4 @@ Goal: To create a seamless, accurate science calculator powered by raw Python co
 ### Calc-v2.0 Finish Date:
 11/8/2025
 
-#### *More updates launching soon*
+#### *More updates coming soon*
