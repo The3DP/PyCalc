@@ -5,9 +5,8 @@
 ## Goal: Make an accurate            ##
 ## calculator using bare Python.     ##
 #######################################
-#PSEUDOCODE:
 
-###========================================================================================##
+###=================================== PSEUDOCODE =========================================##
 ##BEGIN SMART_CALCULATOR                                                                   ##                                                                 
 ##                                                                                         ##
 ##    IMPORT math module                                                                   ##
@@ -83,8 +82,6 @@ def smart_calculator():
 
         except Exception as e:
             print(f"⚠️ Error: {e}\n")
-
-
 # Run the calculator
 if __name__ == "__main__":
     smart_calculator()
