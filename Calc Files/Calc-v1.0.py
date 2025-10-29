@@ -7,12 +7,12 @@
 #######################################
 #PSEUDOCODE:
 
-###========================================================================================
-##BEGIN SMART_CALCULATOR
-##
-##    IMPORT math module
-##
-##    DEFINE allowed_names AS dictionary of math functions and constants
+###========================================================================================##
+##BEGIN SMART_CALCULATOR                                                                   ##                                                                 
+##                                                                                         ##
+##    IMPORT math module                                                                   ##
+##                                                                                         ##
+##    DEFINE allowed_names AS dictionary of math functions and constants                   ##
 ##        (exclude anything that starts with "__")
 ##
 ##    PRINT welcome messages and usage examples
