@@ -7,7 +7,7 @@ Goal: To create a seamless, accurate science calculator powered by raw Python co
 ***11/1/2025***
 
 #### Calc-v1.0 Finish Date:
-##### ***FINISHED****
+##### ***FINISHED***
 
 #### Calc-v2.0 Finish Date:
 ***11/8/2025***
