@@ -56,7 +56,9 @@ import math
 allowed_names = {name: obj for name, obj in math.__dict__.items() if not name.startswith("__")}
 
 def smart_calculator():
-    print("🧮 Smart Interactive Calculator")
+    print("booting . . .")
+    print("Welcome to PyCalc!")
+    print("[VERSION]: v1.0")
     print("Type 'exit' or 'quit' to stop.")
     print("Examples: 2 + 3 * 5, sin(45), sqrt(25), log(10, 2), (3 + 5)**2")
     print("-" * 50)
