@@ -1,7 +1,7 @@
 #######################################
-## The3DP                            ##
-## Expected Finish Date:             ##
-## 11/1/2025                         ##
+## The3DP / d73928430@gmail.com      ##
+##===================================##
+## Program progress: 99.9 %          ##
 ## Goal: Make an accurate            ##
 ## calculator using bare Python.     ##
 #######################################
