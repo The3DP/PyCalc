@@ -9,7 +9,7 @@
 
 """
 ╔═════════════════════════════════════════════════════════════════════════════╗
-║                        SMARTCALC v7.0 Pseudocode Manual                     ║
+║                        Calc-v2.0 Pseudocode Manual                          ║
 ╠═════════════════════════════════════════════════════════════════════════════╣
 
 -- Constants and Setup ----------------------------------------------------------
@@ -83,7 +83,7 @@ from sympy.physics.units import convert_to
 from sympy.core.sympify import SympifyError
 
 # -----------------------------
-# SMARTCALC v7.0 Ultimate
+# Calc v2.0.py
 # -----------------------------
 class Color:
     BLUE="\033[94m"; GREEN="\033[92m"; RED="\033[91m"; YELLOW="\033[93m"; CYAN="\033[96m"; RESET="\033[0m"; BOLD="\033[1m"
