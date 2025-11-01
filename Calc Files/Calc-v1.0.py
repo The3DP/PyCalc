@@ -6,29 +6,24 @@
 ## calculator using bare Python.     ##
 #######################################
 
-def print_smartcalc_pseudocode():
-    GREEN = "\033[92m"
-    RESET = "\033[0m"
-
-    pseudocode = f"""
-{GREEN}╔══════════════════════════════════════════════════════════════════════════════╗
+════════════════════════════════════════════════════════════════════════════════
 ║                                                                              ║
-║                        🟢 SMARTCALC v7.0 PSEUDOCODE 🟢                        ║
+║                          SMARTCALC v7.0 PSEUDOCODE                           ║
 ║                                                                              ║
 ╠══════════════════════════════════════════════════════════════════════════════╣
 ║                           BEGIN SMART_CALCULATOR                             ║
 ╠══════════════════════════════════════════════════════════════════════════════╣
 ║                                                                              ║
-║  • IMPORT math module (and other modules like sympy, os, pickle, re)        ║
+║  • IMPORT math module (and other modules like sympy, os, pickle, re)         ║
 ║                                                                              ║
-║  • DEFINE allowed_names AS dictionary of math functions and constants       ║
+║  • DEFINE allowed_names AS dictionary of math functions and constants        ║
 ║      (exclude any names starting with "__" for safety)                       ║
 ║                                                                              ║
 ║  • PRINT welcome message and usage instructions                              ║
-║      e.g., "Type 'exit' to quit, use '_' for last result"                   ║
+║      e.g., "Type 'exit' to quit, use '_' for last result"                    ║
 ║                                                                              ║
 ║  • LOOP forever:                                                             ║
-║      ▸ PROMPT user for an expression                                        ║
+║      ▸ PROMPT user for an expression                                         ║
 ║                                                                              ║
 ║      ▸ IF expression is "exit" OR "quit":                                    ║
 ║            PRINT goodbye message                                             ║
@@ -36,20 +31,20 @@ def print_smartcalc_pseudocode():
 ║                                                                              ║
 ║      ▸ TRY:                                                                  ║
 ║            IF expression contains "d)" (degree notation):                    ║
-║                REPLACE "d)" with "*(pi/180))" to convert to radians         ║
+║                REPLACE "d)" with "*(pi/180))" to convert to radians          ║
 ║                                                                              ║
 ║            EVALUATE expression safely using allowed_names only               ║
 ║            STORE result in last_result                                       ║
 ║            PRINT result                                                      ║
 ║                                                                              ║
-║      ▸ EXCEPT if an error occurs:                                           ║
+║      ▸ EXCEPT if an error occurs:                                            ║
 ║            PRINT error message with exception details                        ║
 ║                                                                              ║
 ║  • END LOOP                                                                  ║
 ║                                                                              ║
 ╠══════════════════════════════════════════════════════════════════════════════╣
 ║                               END PROGRAM                                    ║
-╚══════════════════════════════════════════════════════════════════════════════╝{RESET}
+╚══════════════════════════════════════════════════════════════════════════════
 """
     print(pseudocode)
 
