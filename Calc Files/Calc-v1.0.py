@@ -1,7 +1,7 @@
 #######################################
 ## The3DP / d73928430@gmail.com      ##
 ##===================================##
-## Program progress: 99.9 %          ##
+## Program progress: Updating...     ##
 ## Goal: Make an accurate            ##
 ## calculator using bare Python.     ##
 #######################################
