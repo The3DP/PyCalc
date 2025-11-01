@@ -9,7 +9,7 @@
 import math
 
 # -------------------------------
-# SMART INTERACTIVE CALCULATOR
+# Calc-v1.0.py
 # -------------------------------
 # This calculator:
 # - Accepts typed expressions (like "2 + 3 * 5" or "sin(45)")
