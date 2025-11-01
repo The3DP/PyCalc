@@ -1,7 +1,7 @@
 #######################################
 ## The3DP                            ##
-## Expected Finish Date:             ##
-##  11/8/2025                        ##
+##                                   ##
+##                                   ##
 ## Goal: Make a corrected            ##
 ## calculator using bare Python      ##
 ## based on corrections/improvements ##
