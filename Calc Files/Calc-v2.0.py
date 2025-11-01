@@ -1,7 +1,7 @@
 #######################################
 ## The3DP                            ##
-##                                   ##
-##                                   ##
+## Program progress:                 ##
+## Updating . . .                    ##
 ## Goal: Make a corrected            ##
 ## calculator using bare Python      ##
 ## based on corrections/improvements ##
