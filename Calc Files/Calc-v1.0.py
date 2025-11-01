@@ -6,6 +6,48 @@
 ## calculator using bare Python.     ##
 #######################################
 
+"""
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                        🟢 SMARTCALC v7.0 PSEUDOCODE 🟢                        ║
+║                                                                              ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                           BEGIN SMART_CALCULATOR                             ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                                                                              ║
+║  • IMPORT math module (and other modules like sympy, os, pickle, re)         ║
+║                                                                              ║
+║  • DEFINE allowed_names AS dictionary of math functions and constants        ║
+║      (exclude any names starting with "__" for safety)                       ║
+║                                                                              ║
+║  • PRINT welcome message and usage instructions                              ║
+║      e.g., "Type 'exit' to quit, use '_' for last result"                    ║
+║                                                                              ║
+║  • LOOP forever:                                                             ║
+║      ▸ PROMPT user for an expression                                         ║
+║                                                                              ║
+║      ▸ IF expression is "exit" OR "quit":                                    ║
+║            PRINT goodbye message                                             ║
+║            BREAK loop                                                        ║
+║                                                                              ║
+║      ▸ TRY:                                                                  ║
+║            IF expression contains "d)" (degree notation):                    ║
+║                REPLACE "d)" with "*(pi/180))" to convert to radians          ║
+║                                                                              ║
+║            EVALUATE expression safely using allowed_names only               ║
+║            STORE result in last_result                                       ║
+║            PRINT result                                                      ║
+║                                                                              ║
+║      ▸ EXCEPT if an error occurs:                                            ║
+║            PRINT error message with exception details                        ║
+║                                                                              ║
+║  • END LOOP                                                                  ║
+║                                                                              ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                               END PROGRAM                                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+"""
+
 import math
 
 # -------------------------------
