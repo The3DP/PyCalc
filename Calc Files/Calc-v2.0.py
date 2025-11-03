@@ -115,7 +115,7 @@ from sympy.physics.units import meter, centimeter, kilogram, gram, second, minut
 from sympy.core.sympify import SympifyError
 
 # -----------------------------
-# SmartCalc v7.0 Ultimate
+# PyCalc v2.0 
 # -----------------------------
 class Color:
     BLUE = "\033[94m"
@@ -204,7 +204,7 @@ def safe_eval(expr: str):
     return result
 
 def intro():
-    print(f"{Color.BLUE}{Color.BOLD}Booting SmartCalc v7.0 Ultimate...{Color.RESET}")
+    print(f"{Color.BLUE}{Color.BOLD}Booting SmartCalc v2.0 ...{Color.RESET}")
     print("=" * 70)
     print("Supports: symbolic math, solving, units, and plotting")
     print("Commands: help, vars, del var, history, clear, reset, exit")
