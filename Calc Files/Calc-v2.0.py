@@ -7,7 +7,103 @@
 ## from 'Calc-v1.0'                  ##
 #######################################
 
+'''
+╔═════════════════════════════════════════════════════════════════════════════╗
+║                      SmartCalc-v7.0 Pseudocode Manual                       ║
+╠═════════════════════════════════════════════════════════════════════════════╣
 
+-- Constants and Setup ----------------------------------------------------------
+Color class:
+    BLUE, GREEN, RED, YELLOW, CYAN, RESET, BOLD
+
+SAFE_NAMES dictionary:
+    Constants: pi, e, tau
+    Math functions: sin, cos, tan, sqrt, log, ln, fact,
+                    diff, integrate, simplify, expand, solve, Eq, plot
+    Units: m, cm, kg, g, s, min, h, deg
+
+SESSION_FILE = "smartcalc_session.pkl"
+memory = {}        # Stores user-defined variables
+history = []       # Stores user input commands
+last_result = None # Holds most recent result
+
+-- Load Session -----------------------------------------------------------------
+FUNCTION load_session():
+    IF SESSION_FILE exists:
+        TRY:
+            OPEN and UNPICKLE session file
+            RESTORE memory, history, and last_result
+        EXCEPT:
+            IGNORE any errors
+
+-- Save Session -----------------------------------------------------------------
+FUNCTION save_session():
+    OPEN SESSION_FILE for writing (binary)
+    PICKLE {memory, history, last_result}
+
+-- Safe Evaluation --------------------------------------------------------------
+FUNCTION safe_eval(expr):
+    REPLACE "_" with last_result (if exists)
+    CONVERT degree notation (e.g., sin(30d) → sin(30*pi/180))
+
+    IF expression contains "=" (and not "=="):
+        SPLIT into variable and value expression
+        EVALUATE right-hand side safely
+        STORE in memory[var]
+        SET last_result = value
+        RETURN "var = value"
+
+    ELSE IF expression starts with "solve(" and ends with ")":
+        PARSE inside of solve()
+        CALL SymPy.solve() on expression
+        UPDATE last_result
+        RETURN solutions
+
+    ELSE:
+        SAFELY evaluate expression using sympy.sympify()
+        UPDATE last_result
+        RETURN result
+
+-- Intro ------------------------------------------------------------------------
+FUNCTION intro():
+    PRINT boot header, version, supported features, and command list
+
+-- Help -------------------------------------------------------------------------
+FUNCTION show_help():
+    PRINT all available math functions, units, and calculator commands
+
+-- Main Calculator Loop ---------------------------------------------------------
+FUNCTION smart_calculator():
+    CALL load_session()
+    CALL intro()
+
+    LOOP FOREVER:
+        PROMPT user with ">>> "
+        READ input string
+        IF input is empty, CONTINUE loop
+        ADD input to history
+
+        MATCH commands:
+            "exit" or "quit" → CALL save_session(), PRINT goodbye, BREAK
+            "help"           → CALL show_help()
+            "vars"           → PRINT stored variables
+            "del <var>"      → DELETE variable from memory
+            "clear"          → CLEAR all memory
+            "reset"          → CLEAR memory and reset last_result
+            "history"        → PRINT all stored commands
+        OTHERWISE:
+            CALL safe_eval(input)
+            IF result is a plot object:
+                SHOW plot
+            ELSE:
+                PRINT formatted result
+
+-- Program Entry Point ----------------------------------------------------------
+IF __name__ == "__main__":
+    CALL smart_calculator()
+
+╚═════════════════════════════════════════════════════════════════════════════╝
+'''
 
 import math, readline, pickle, os, re
 from sympy import (
